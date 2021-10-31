@@ -23,7 +23,7 @@ public class RestAssuredTest extends RestAssuredBaseTest {
                 .get("/current.json");
 
 
-        log.info("");
+        log.info("this is a test");
 
         rp.then().assertThat().log().all().body("location.name", equalTo("Lviv"));
     }
